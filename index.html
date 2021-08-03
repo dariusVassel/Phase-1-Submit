@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./scripts/index.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>decentra</title>
+  </head>
+  <body>
+    <!-- <h1 id='heading'>Welcome</h1> -->
+    <header>
+      <div class="header">
+        <div class="inner-header">
+          <div class="logo-container">
+            <a href="./index.html"
+              ><img
+                src="./assets/images/black-logo-cropped.png"
+                height="48px"
+                width="200px"
+                alt="withthetide logo"
+                id="logo-text"
+            /></a>
+          </div>
+          <!-- <input type="text" placeholder="Search.." id="#search-button"> -->
+        </div>
+      </div>
+    </header>
+
+    <!-- price table section -->
+    <table class="table table-bordered" id="overall-table">
+      <thead>
+        <tr>
+          <th scope="col" class="table-header">Rank</th>
+          <th scope="col" class="table-header">Symbol</th>
+          <th scope="col" class="table-header">Icon</th>
+          <th scope="col" class="table-header">Name</th>
+          <th scope="col" class="table-header">Price</th>
+          <th scope="col" class="table-header">% Change</th>
+          <th scope="col" class="table-header">Market Cap</th>
+          <th scope="col" class="table-header"></th>
+        </tr>
+      </thead>
+      <tbody id="table-content"></tbody>
+    </table>
+    <div class="all-buttons">
+      <button class="buttons" id="b1">Top 5</button>
+      <button class="buttons" id="b2">Top 10</button>
+      <button class="buttons" id="b3">Top 25</button>
+      <button class="buttons" id="b4">Top 50</button>
+    </div>
+
+    <hr id="horizontal-line" />
+
+    <!-- Comment Board  -->
+    <div id="comment-board">
+      <form id="comment-form" class="commenting">
+        <input type="text" name="name" placeholder="Asset Name" value="" />
+        <input type="text" name="price" placeholder="Asset Price" value="" />
+        <input
+          type="text"
+          name="comment"
+          placeholder="Comment"
+          class="comment"
+          value=""
+        />
+        <input class="buttons" type="submit" value="Submit" />
+      </form>
+      <h2 id="caption">Discussion</h2>
+      <p id="instructions">Anonomously share your thoughts below!</p>
+      <ul class="leaderboard__title" id="messages">
+        <li>
+          <div class="comments-box">
+            <div class="left-panel">
+              <h4>ETH</h4>
+              <p>2213.31</p>
+            </div>
+            <div class="right-panel">
+              <p>
+                "Every financial transaction in every app will eventually give
+                you a link to a block explorer as a universal receipt."
+              </p>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="white-space"></div>
+        </li>
+        <li>
+          <div class="comments-box">
+            <div class="left-panel">
+              <h4>ETH</h4>
+              <p>2227.43</p>
+            </div>
+            <div class="right-panel">
+              <p>
+                "A transition from Proof of Work to Proof of Stake would
+            significantly reduce energy consumption!"
+              </p>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="white-space"></div>
+        </li>
+        <li>
+          <div class="comments-box">
+            <div class="left-panel">
+              <h4>BTC</h4>
+              <p>43289.31</p>
+            </div>
+            <div class="right-panel">
+              <p>
+                "Does this make a good hedge in the case of inflation?"
+              </p>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="white-space"></div>
+        </li>
+      </ul>
+    <div id="white-gap"></div>
+
+    <!-- Footer Setion  -->
+    <div class="footer" id="footer">
+      <div class="inner-footer">
+        <div class="logo-container">
+          <img src="./assets/images/FinalLogo.png" alt="withthetide logo" />
+        </div>
+        <div class="footer-third">
+          <h1>Need Help?</h1>
+          <p>Reach us between 9am-6pm</p>
+          <p>
+            Customer Support: <br />support@decentra.com <br />
+            jobs@decentra.com
+          </p>
+        </div>
+        <div class="footer-third">
+          <h1>More</h1>
+          <p>Stay updated:</p>
+          <input type="text" value="Email Address" />
+          <br />
+          <button>Submit</button>
+        </div>
+
+        <div class="footer-third">
+          <h1>Follow Us</h1>
+          <li>
+            <a href="" target="_blank"
+              ><i
+                class="fa fa-facebook"
+                style="font-size: 22px; color: black"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="" target="_blank"
+              ><i
+                class="fa fa-instagram"
+                style="font-size: 22px; color: black"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="" target="_blank"
+              ><i
+                class="fa fa-twitter"
+                style="font-size: 22px; color: black"
+              ></i
+            ></a>
+          </li>
+        </div>
+      </div>
+      <!--<p id="copywright-tag">&copy 2020 withthetide. All rights reserved</p>-->
+    </div>
+  </body>
+</html>
